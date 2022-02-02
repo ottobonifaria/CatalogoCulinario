@@ -1,11 +1,14 @@
 package program;
 
 public enum Tipo {
-    GRAMAS,
+    COPOS,
+    PRATOS,
+    XÍCARAS,
+    PORÇÕES,
+    UNIDADES,
+    COLHERES,
     MILILITROS,
-    XICARA,
-    COLHER,
-    COLHERDECHA
+    MILIGRAMAS
     ;
 
 }
