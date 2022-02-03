@@ -16,9 +16,14 @@ public class Rendimento {
     public void setTipo(Tipo tipo) {
         this.tipo = tipo;
     }
+
+    public Tipo getTipo() {
+        return tipo;
+    }
+
     @Override
     public String toString() {
-        return quantidade + " " + tipo;
+        return quantidade + " " + tipo.getTipo();
     }
 
     public void alteraRendimento(int quantidade, Tipo tipo) {

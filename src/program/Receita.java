@@ -45,9 +45,12 @@ public class Receita {
 
     @Override
     public String toString() {
-        return "Receita:\t" + id + "\nNome:\t\t" + nomeReceita + "\nCategoria:\t" + categoria + "\nTempo Preparo:\t"
-                + tempoDePreparo + " Minutos" + "\nRendimento:\t" + rendimento + "\nIngredientes: "
-                + Arrays.toString(ingrediente).replaceAll("[\\[\\]{}\\,]","")
+        return "Receita:\t" + id
+                + "\nNome:\t\t" + nomeReceita
+                + "\nCategoria:\t" + categoria.getCategoria()
+                + "\nTempo Preparo:\t" + tempoDePreparo + " Minutos"
+                + "\nRendimento:\t" + rendimento
+                + "\nIngredientes: "+ Arrays.toString(ingrediente).replaceAll("[\\[\\]{}\\,]","")
                 + "\nModo de Preparo: " + Arrays.toString(preparo).replaceAll("[\\[\\](){}\\,]","");
     }
 }

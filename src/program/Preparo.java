@@ -3,8 +3,8 @@ package program;
 public class Preparo {
     private String descricao;
 
-    public Preparo(String descrição) {
-        this.descricao = descrição;
+    public Preparo(String descricao) {
+        this.descricao = descricao;
     }
 
     public void setDescricao(String descricao) {
@@ -12,7 +12,7 @@ public class Preparo {
     }
     @Override
     public String toString() {
-        return "\n\t" + descricao.toString();
+        return "\n\t" + descricao;
     }
 
     public void alteraDescricao(String descricao) {

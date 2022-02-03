@@ -22,9 +22,14 @@ public class Ingrediente {
     public void setTipo(Tipo tipo) {
         this.tipo = tipo;
     }
+
+    public Tipo getTipo() {
+        return tipo;
+    }
+
     @Override
     public String toString() {
-        return "\n\t" + nomeIngrediente + " (" + quantidadeIngrediente + " " + tipo + ")";
+        return "\n\t" + nomeIngrediente + " (" + quantidadeIngrediente + " " + tipo.getTipo() + ")";
     }
 
     public void alteraIngredientes(String nome, double quantidade, Tipo tipo) {
